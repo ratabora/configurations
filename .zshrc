@@ -33,3 +33,6 @@ EOBUNDLES
 
 # https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"
+
+# lscolors
+export CLICOLOR=1
