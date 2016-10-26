@@ -1,4 +1,4 @@
-source ~/.riotrc
+source ~/.workrc
 source ~/.localrc
 
 # https://github.com/Yleisradio/homebrew-terraforms
@@ -30,3 +30,6 @@ sindresorhus/pure
 #jreese/zsh-titles
 TBSliver/zsh-plugin-tmux-simple
 EOBUNDLES
+
+# https://github.com/nvbn/thefuck
+eval "$(thefuck --alias)"
