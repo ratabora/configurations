@@ -8,7 +8,7 @@ if [[ "$unamestr" == 'Darwin' ]]; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
   # install a few terminal basics
-  brew install rbenv pyenv zsh tmux wget vim
+  brew install rbenv pyenv zsh tmux wget vim jq maven tree
   # default to zsh shell
   chsh -s $(which zsh) $(whoami)
 elif [[ "$unamestr" == 'Linux' ]]; then
