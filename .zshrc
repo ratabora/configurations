@@ -7,8 +7,21 @@ if [[ -f /usr/local/share/chtf/chtf.sh ]]; then
 fi
 
 # zsh bindings
+## set vim line editing
 bindkey -v
-bindkey '^R' history-incremental-search-backward
+## reduce lag when switching to vim line editing
+export KEYTIMEOUT=1
+## search history backwards using ctrl-r
+bindkey '^r' history-incremental-search-backward
+
+function zle-line-init zle-keymap-select {
+    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+    zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
 
 # default editor
 export EDITOR='vim'
