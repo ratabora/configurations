@@ -6,7 +6,7 @@ echo "Need to pre install sudo and add user to sudoers file"
 
 
 # install all my wonderful packages
-sudo pacman -S --noconfirm --needed base-devel chromium vim git thefuck linux-headers zsh zsh-completions gnome-tweak-tool ntp xf86-input-synaptics
+sudo pacman -S --noconfirm --needed base-devel chromium vim git thefuck linux-headers zsh zsh-completions gnome-tweak-tool ntp xf86-input-synaptics openssh
 
 # install yaourt
 cd $CODE_HOME
