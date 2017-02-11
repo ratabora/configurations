@@ -19,7 +19,7 @@ cd yaourt
 makepkg -si --noconfirm --needed
 cd ..
 
-yaourt -S --noconfirm --needed touchegg gnome-session-properties
+yaourt -S --noconfirm --needed touchegg gnome-session-properties chromium-widevine antibody
 
 # update os
 sudo pacman -Syu
