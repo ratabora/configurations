@@ -1,7 +1,7 @@
 source ~/.workrc
 source ~/.localrc
 
-export CODE_HOME=/home/rtabora/Documents/code
+export CODE_HOME=$HOME/Documents/code
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
