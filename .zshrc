@@ -1,6 +1,11 @@
 source ~/.workrc
 source ~/.localrc
 
+export CODE_HOME=/home/ratabora/Documents/code
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
 # https://github.com/Yleisradio/homebrew-terraforms
 if [[ -f /usr/local/share/chtf/chtf.sh ]]; then
     source "/usr/local/share/chtf/chtf.sh"
