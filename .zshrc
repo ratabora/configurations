@@ -1,15 +1,10 @@
 source ~/.workrc
 source ~/.localrc
 
-export CODE_HOME=/home/ratabora/Documents/code
+export CODE_HOME=/home/rtabora/Documents/code
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-
-# https://github.com/Yleisradio/homebrew-terraforms
-if [[ -f /usr/local/share/chtf/chtf.sh ]]; then
-    source "/usr/local/share/chtf/chtf.sh"
-fi
 
 # zsh bindings
 ## set vim line editing
@@ -36,7 +31,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # antibody zsh
 source <(antibody init)
