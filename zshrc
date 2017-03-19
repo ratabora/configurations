@@ -29,7 +29,6 @@ eval "$(rbenv init -)"
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # antibody zsh
 source <(antibody init)
