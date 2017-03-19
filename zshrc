@@ -1,7 +1,3 @@
-source ~/.workrc
-source ~/.localrc
-
-export CODE_HOME=$HOME/Documents/code
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
@@ -51,3 +47,8 @@ eval "$(thefuck --alias)"
 
 # lscolors
 export CLICOLOR=1
+
+if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+  exec startx
+fi
+
