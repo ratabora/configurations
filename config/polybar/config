@@ -45,7 +45,7 @@ font-2 = sm4tik:pixelsize=10;1
 
 modules-left = i3
 modules-center = date
-modules-right = mpd weather battery
+modules-right = mpd battery
 
 tray-position =hidden
 tray-padding = 11
@@ -66,18 +66,6 @@ wm-restack = i3
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
-
-
-[module/weather]
-type = custom/script
-interval = 60
-
-format-background = ${colors.background-mod1}
-format = <label>
-format-prefix = " ⁣   "
-format-suffix = "  "
-format-prefix-foreground = ${colors.foreground-alt}
-exec = python ~/.config/polybar/weather.py
 
 
 [module/mpd]
