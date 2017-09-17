@@ -30,17 +30,6 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 
-# antibody zsh
-source <(antibody init)
-antibody bundle <<EOBUNDLES
-zsh-users/zsh-history-substring-search
-zsh-users/zsh-syntax-highlighting
-mafredri/zsh-async
-sindresorhus/pure
-#jreese/zsh-titles
-TBSliver/zsh-plugin-tmux-simple
-EOBUNDLES
-
 # https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"
 
